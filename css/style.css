@@ -1,0 +1,154 @@
+body {
+  font-family: 'Exo 2', sans-serif;
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+
+}
+
+*,
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* container */
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* intro */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url('../img/ivanovbg.jpg')  no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+}       
+
+.intro__title {
+  font-size: 70px;
+  color: #FFFFFF;
+  margin: 300px 0px 83px 0px;
+  line-height: 92px;
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
+.intro__inner {
+  margin-left: 70px;
+  width: 100%; 
+  max-width: 875px;
+}
+
+.intro__subtitle {
+  font-size: 33px;
+  line-height: 39px;
+  color: #FFF9F9;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* header */
+.header {
+  position: absolute;
+  padding: 31px 54px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav */
+.header__nav {
+  color: #fff;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 44px;
+  line-height: 53px;
+  text-shadow: 1px 1px 1px #000000;
+  text-transform: uppercase;
+}
+
+.header__link {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: -50px 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: .1s linear;
+}
+
+.header__link:hover:after,
+.header__link.active:after{
+  opacity: 1 ;
+
+}
+
+.header__link.active{
+  color: #FFB342;
+}
+
+.header__link:hover {
+  color: #FFB342;
+}
+
+.header__link:after {
+  content:"";
+  display: block;
+  width: 100%;
+  height: 3px;
+  opacity: 0;
+  background-color: #FFB342;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transition: opacity .1s linear;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  margin-top: 80px;
+  vertical-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 30px 30px;
+  color: #fff;
+  background: linear-gradient(to left, #FF0A62 , #FFB342 );
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: normal;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  width: 508px;
+  height: 113px;
+  transition: border .5s linear,color linear;
+}
+
+.btn:hover{
+  border: 3px solid #FFB342;
+  color: #333;
+}
